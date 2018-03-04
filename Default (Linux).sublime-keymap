@@ -24,6 +24,7 @@
   { "keys": ["super+shift+left"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
   { "keys": ["super+shift+right"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
 
+  { "keys": ["alt+a"], "command": "select_all" },
   { "keys": ["alt+x"], "command": "cut" },
   { "keys": ["alt+c"], "command": "copy" },
   { "keys": ["alt+v"], "command": "paste" },
