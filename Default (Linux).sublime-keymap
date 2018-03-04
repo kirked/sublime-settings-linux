@@ -1,0 +1,63 @@
+[
+  { "keys": ["alt+q"], "command": "exit" },
+
+  { "keys": ["alt+shift+n"], "command": "new_window" },
+  { "keys": ["alt+shift+w"], "command": "close_window" },
+  { "keys": ["alt+o"], "command": "prompt_open_file" },
+  { "keys": ["alt+shift+t"], "command": "reopen_last_file" },
+  { "keys": ["alt+n"], "command": "new_file" },
+  { "keys": ["alt+s"], "command": "save" },
+  { "keys": ["alt+shift+s"], "command": "prompt_save_as" },
+  { "keys": ["alt+f4"], "command": "close_file" },
+  { "keys": ["alt+w"], "command": "close" },
+
+  { "keys": ["alt+left"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+  { "keys": ["alt+right"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+  { "keys": ["alt+shift+left"], "command": "move_to", "args": {"to": "bol", "extend": true} },
+  { "keys": ["alt+shift+right"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+
+  { "keys": ["alt+]"], "command": "indent" },
+  { "keys": ["alt+["], "command": "unindent" },
+  
+  { "keys": ["super+left"], "command": "move", "args": {"by": "words", "forward": false} },
+  { "keys": ["super+right"], "command": "move", "args": {"by": "word_ends", "forward": true} },
+  { "keys": ["super+shift+left"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
+  { "keys": ["super+shift+right"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
+
+  { "keys": ["alt+x"], "command": "cut" },
+  { "keys": ["alt+c"], "command": "copy" },
+  { "keys": ["alt+v"], "command": "paste" },
+  { "keys": ["alt+shift+v"], "command": "paste_and_indent" },
+
+  { "keys": ["alt+z"], "command": "undo" },
+  { "keys": ["alt+shift+z"], "command": "redo" },
+
+  { "keys": ["alt+d"], "command": "find_under_expand" },
+
+  { "keys": ["alt+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
+  { "keys": ["alt+super+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+  { "keys": ["alt+g"], "command": "find_next" },
+  { "keys": ["alt+shift+g"], "command": "find_prev" },
+  { "keys": ["alt+e"], "command": "slurp_find_string" },
+  { "keys": ["alt+shift+e"], "command": "slurp_replace_string" },
+  { "keys": ["alt+shift+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+
+  { "keys": ["f3"], "command": "goto_definition" },
+  { "keys": ["alt+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+  { "keys": ["alt+shift+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+
+  { "keys": ["alt+/"], "command": "toggle_comment", "args": { "block": false } },
+  { "keys": ["alt+shift+/"], "command": "toggle_comment", "args": { "block": true } },
+
+  { "keys": ["alt+`"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
+  { "keys": ["alt+k", "alt+u"], "command": "upper_case" },
+  { "keys": ["alt+k", "alt+l"], "command": "lower_case" },
+
+  { "keys": ["alt++"], "command": "increase_font_size" },
+  { "keys": ["alt+="], "command": "increase_font_size" },
+  { "keys": ["alt+-"], "command": "decrease_font_size" },
+
+  { "keys": ["alt+shift+["], "command": "fold" },
+  { "keys": ["alt+shift+]"], "command": "unfold" },
+]
